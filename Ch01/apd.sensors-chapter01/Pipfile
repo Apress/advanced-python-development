@@ -1,0 +1,20 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[[source]]
+name = "piwheels"
+url = "https://piwheels.org/simple"
+verify_ssl = true
+
+[dev-packages]
+ipykernel = "*"
+remote-ikernel = "*"
+
+[packages]
+psutil = "*"
+click = "*"
+adafruit-circuitpython-dht = {markers = "'arm' in platform_machine",version = "*"}
+
+[requires]

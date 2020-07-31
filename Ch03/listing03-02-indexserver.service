@@ -1,0 +1,12 @@
+[Unit]
+Description=Custom Index Server for Python distributions
+After=multi-user.target
+
+[Service]
+Type=idle
+User=indexserver
+WorkingDirectory=/home/indexserver/indexserver
+ExecStart=/home/indexserver/.local/bin/pipenv run pypi-server -p 8080 -P htaccess ../packages
+
+[Install]
+WantedBy=multi-user.target

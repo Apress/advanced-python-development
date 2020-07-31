@@ -1,0 +1,29 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[[source]]
+name = "pypi"
+url = "https://piwheels.org/simple"
+verify_ssl = true
+
+[dev-packages]
+ipykernel = "*"
+remote-ikernel = "*"
+pytest = "*"
+pytest-cov = "*"
+mypy = "*"
+flake8 = "*"
+black = "*"
+pre-commit = "*"
+
+[packages]
+psutil = "*"
+click = "*"
+adafruit-circuitpython-dht = {markers = "'arm' in platform_machine",version = "*"}
+
+[requires]
+
+[pipenv]
+allow_prereleases = true

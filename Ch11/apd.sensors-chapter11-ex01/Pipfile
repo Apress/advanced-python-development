@@ -1,0 +1,34 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[[source]]
+name = "piwheels"
+url = "https://piwheels.org/simple"
+verify_ssl = true
+
+[dev-packages]
+ipykernel = "*"
+remote-ikernel = "*"
+pytest = "*"
+pytest-cov = "*"
+mypy = "*"
+flake8 = "*"
+black = "*"
+pre-commit = "*"
+wheel = "*"
+twine = "*"
+webtest = "*"
+sqlalchemy-stubs = "*"
+
+[packages]
+apd-sensors = {editable = true,extras = ["scheduled", "webapp", "storedapi"],path = "."}
+apd-sunnyboy-solar = {editable = true,path = "./plugins/apd.sunnyboy_solar"}
+waitress = "*"
+pint = "==0.10.1"
+
+[requires]
+
+[pipenv]
+allow_prereleases = true

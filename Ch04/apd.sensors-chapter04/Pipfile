@@ -1,0 +1,31 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[[source]]
+name = "piwheels"
+url = "https://piwheels.org/simple"
+verify_ssl = true
+
+[dev-packages]
+ipykernel = "*"
+remote-ikernel = "*"
+pytest = "*"
+pytest-cov = "*"
+mypy = "*"
+flake8 = "*"
+black = "*"
+pre-commit = "*"
+wheel = "*"
+twine = "*"
+webtest = "*"
+
+[packages]
+apd-sensors = {editable = true,path = "."}
+apd-sunnyboy-solar = {editable = true,path = "./plugins/apd.sunnyboy_solar"}
+
+[requires]
+
+[pipenv]
+allow_prereleases = true

@@ -1,0 +1,12 @@
+Generic single-database configuration.
+
+
+# Database setup
+
+To generate the required database tables you must create an alembic.ini file, as follows:
+
+    [alembic]
+    script_location = apd.aggregation:alembic
+    sqlalchemy.url = postgresql+psycopg2://apd@localhost/apd
+
+and run `alembic upgrade head`. This should also be done after every upgrade of the software.
